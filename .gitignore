@@ -1,0 +1,56 @@
+# ---- .NET ----
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+*.userprefs
+project.lock.json
+artifacts/
+TestResults/
+*.trx
+coverage*.xml
+coverage*.json
+.vs/
+
+# ---- Secrets: never commit ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# ---- Terraform ----
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+plan.out
+plan.json
+
+# ---- Kubernetes / Helm ----
+charts/*.tgz
+kubeconfig
+*.kubeconfig
+
+# ---- Node (the React frontend, built last) ----
+node_modules/
+dist/
+build/
+.next/
+*.tsbuildinfo
+
+# ---- Editors / OS ----
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+*:Zone.Identifier

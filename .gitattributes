@@ -1,0 +1,24 @@
+# LF everywhere. The repo lives on the Linux filesystem but is edited from a Windows IDE,
+# so without this a CRLF leak would break shell scripts and Dockerfiles at runtime.
+* text=auto eol=lf
+
+*.sh      text eol=lf
+Dockerfile text eol=lf
+*.cs      text eol=lf diff=csharp
+*.csproj  text eol=lf
+*.sln     text eol=lf
+*.props   text eol=lf
+*.targets text eol=lf
+*.json    text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.tf      text eol=lf
+
+# Binaries — never touch
+*.png binary
+*.jpg binary
+*.ico binary
+*.gz  binary
+*.zip binary
+*.dll binary
+*.pdf binary
